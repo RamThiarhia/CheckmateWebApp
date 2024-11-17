@@ -161,3 +161,66 @@ footer {
         position: relative;
     }
 }
+
+/* General Styles for the Section */
+#item-analysis {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#item-analysis h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Table Styles */
+#item-analysis .table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#item-analysis .table th,
+#item-analysis .table td {
+    text-align: center;
+    padding: 12px;
+}
+
+#item-analysis .table th {
+    background-color: #f1f1f1;
+    color: #333333;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+#item-analysis .table td {
+    font-size: 1rem;
+    color: #666666;
+}
+
+#item-analysis .table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Chart Styles */
+#item-analysis canvas {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #item-analysis h2 {
+        font-size: 1.5rem;
+    }
+
+    #item-analysis .table th,
+    #item-analysis .table td {
+        font-size: 0.9rem;
+    }
+}

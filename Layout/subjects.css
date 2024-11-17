@@ -11,8 +11,14 @@ body {
 h2 {
     text-align: center;
     margin-top: 40px;
+    padding-top: 3rem;
     font-size: 2rem;
     color: #333;
+}
+
+#course-name{
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 /* Buttons */
@@ -42,21 +48,21 @@ h2 {
 
 /* Add Button */
 .add-btn {
-    background-color: #28a745 !important;
+    background-color: #cdd021 !important;
     margin-left: 20px;
 }
 
 .add-btn:hover {
-    background-color: #218838 !important;
+    background-color: #cdd021 !important;
 }
 
 /* Submit Button */
 .submit-btn {
-    background-color: #28a745 !important;
+    background-color: #cdd021 !important;
 }
 
 .submit-btn:hover {
-    background-color: #218838 !important;
+    background-color: #cdd021 !important;
 }
 
 /* Subject Cards */
@@ -84,7 +90,7 @@ h2 {
 
 .card h3 {
     font-size: 1.3rem;
-    color: #0234fa; /* Blue for the subject name */
+    color: #010101; /* Blue for the subject name */
     font-family: 'Poppins', sans-serif; /* Stylish font for the subject name */
     margin-bottom: 10px;
     font-weight: bold;
@@ -185,3 +191,5 @@ input[type="text"] {
 .remove-btn:hover {
     background-color: darkred !important;
 }
+
+

@@ -37,18 +37,20 @@ h1, h2 {
 
 /* Circular Buttons for Options */
 .option {
-    display: inline-block;
+    display: inline-block; /* Keep inline-block to allow natural flow */
     width: 40px;
     height: 40px;
-    line-height: 40px;
     border-radius: 50%;
-    text-align: center;
+    text-align: center; /* Horizontally center the text */
+    vertical-align: middle; /* Align to middle of the line */
+    line-height: 40px; /* Match line height to height for vertical centering */
     background-color: #f0f0f0;
     color: #333;
     border: 2px solid #ddd;
     cursor: pointer;
     margin: 5px;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* Control font size for better alignment */
 }
 
 .option:hover {
@@ -57,9 +59,9 @@ h1, h2 {
 }
 
 .option.selected {
-    background-color: #28a745;
+    background-color: #cdd021;
     color: #fff;
-    border: 2px solid #28a745;
+    border: 2px solid #cdd021;
 }
 
 /* Buttons */

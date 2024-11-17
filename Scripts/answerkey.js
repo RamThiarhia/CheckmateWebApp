@@ -79,4 +79,5 @@ function goBack() {
 }
 
 // Load the answer key when the page is ready
-window.onload = loadAnswerKey;
+
+window.addEventListener('load', loadAnswerKey);
