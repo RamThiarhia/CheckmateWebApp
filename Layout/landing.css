@@ -1,75 +1,112 @@
 /* General Styles */
 body {
-    background-color: #f8f9fa;
+    background-color: #002a8a; /* Deep blue for the background */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #ffffff; /* Default white text for visibility */
 }
 
 .container {
     text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    margin-bottom: 20px;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 50px;
+    color: #ffea00; /* Bright yellow for branding emphasis */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+form label {
+    font-size: 0.9rem;
+    color: #002a8a; /* Deep blue for form labels */
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border: 1px solid #ffea00; /* Yellow focus state */
+    box-shadow: 0 0 5px #ffea00;
 }
 
 button {
-    margin: 10px;
-    padding: 12px 25px;
-    font-size: 1rem;
-}
-
-/* Modal Styles */
-.modal-content {
-    border-radius: 8px;
-}
-
-.modal-header {
-    background-color: #f1f1f1;
-    padding: 15px;
-}
-
-.modal-body {
-    padding: 20px;
-}
-
-.form-group input {
-    font-size: 1rem;
-    padding: 10px;
-    margin-bottom: 15px;
     width: 100%;
-}
-
-.btn-primary {
-    background-color: #007bff;
-}
-
-.btn-success {
-    background-color: #28a745;
-}
-
-/* Modal Buttons */
-.close {
-    font-size: 28px;
+    padding: 12px;
+    background-color: #ffea00; /* Bright yellow for buttons */
+    color: #002a8a; /* Blue text for contrast */
+    font-size: 1rem;
     font-weight: bold;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
+button:hover {
+    background-color: #ffc107; /* Slightly darker yellow for hover effect */
+}
 
-    button {
-        font-size: 0.9rem;
-    }
+.options {
+    margin-top: 15px;
+    text-align: center;
+}
 
-    .form-group input {
-        font-size: 0.9rem;
-    }
+.options a {
+    color: #ffea00; /* Yellow links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Register Option */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a {
+    color: #ffea00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

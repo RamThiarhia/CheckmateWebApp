@@ -8,15 +8,19 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
     
-    <link rel="stylesheet" href="/Layout/landing.css">
+    <link rel="stylesheet" href="../Layout/landing.css">
 </head>
 <body>
 
+    <!--   
+
     <div class="container text-center">
-        <h1 class="my-5">Checkmate Admin</h1>
+        <h1 class="my-5">CheckMate Admin</h1>
         <button class="btn btn-primary" id="openLoginModal">Login</button>
         <button class="btn btn-success" id="openRegisterModal">Register</button>
     </div>
+
+    -->
 
     
     <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -67,6 +71,29 @@
             </div>
         </div>
     </div>
+
+    <!-- CSS -->
+
+    <div class="container">
+        <h1>CheckMate Admin</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <div>
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+                <a href="#" style="float: right;">Forgot Password?</a>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+        <footer>
+            Do you have an account? <a href="#">Register</a>
+        </footer>
+    </div>
+    
+
 
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
