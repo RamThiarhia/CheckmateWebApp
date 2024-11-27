@@ -28,8 +28,8 @@ body {
 /* Course Cards Layout */
 .course-cards {
     display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
-    gap: 20px !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important; /* Increased minimum size for the cards */
+    gap: 30px !important; /* Increased gap for better spacing */
     margin-top: 30px !important;
 }
 
@@ -37,14 +37,15 @@ body {
 .card {
     display: flex !important;
     flex-direction: column !important; /* Stack content vertically */
-    justify-content: space-between !important;
-    height: 100% !important; /* Ensures cards are of equal height */
+    justify-content: center !important; /* Center content vertically */
+    align-items: center !important; /* Center content horizontally */
+    height: 350px !important; /* Set a fixed height for the cards */
     border-radius: 8px !important;
     border: 1px solid #ddd !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
     background-color: #fff !important;
     box-sizing: border-box !important; /* Includes padding and border in the size */
-    overflow: hidden !important; /* Keeps content within the bounds */
+    padding: 20px !important; /* Add padding inside the card */
 }
 
 .card:hover {
@@ -52,29 +53,20 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Card Body */
-.card-body {
-    padding: 20px !important;
-    background-color: #f9f9f9 !important;
-    flex-grow: 1 !important; /* Makes sure the card body takes available space */
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-}
-
 /* Card Title */
 .card-title {
-    font-size: 1.5rem !important;
+    font-size: 1.75rem !important; /* Increased font size */
     font-weight: 600 !important;
-    color: #000000 !important; /* Bootstrap primary blue color */
-    margin-bottom: 10px !important;
+    color: #000000 !important;
+    margin-bottom: 15px !important; /* Increased margin */
+    text-align: center; /* Center the title */
 }
 
 /* Card Description (Text) */
 .card-text {
-    font-size: 1rem !important;
+    font-size: 1.125rem !important; /* Slightly larger font size */
     color: #555 !important;
-    flex-grow: 1 !important; /* Ensures text takes up available space */
+    text-align: center; /* Center the description */
 }
 
 /* Responsive Design */
@@ -83,15 +75,11 @@ body {
         font-size: 2rem !important;
     }
 
-    .card-body {
-        padding: 15px !important;
+    .card-title {
+        font-size: 1.5rem !important; /* Smaller font size for smaller screens */
     }
 
-    nav ul li {
-        margin: 0 15px !important;
-    }
-
-    nav ul li a {
-        font-size: 14px !important;
+    .card-text {
+        font-size: 1rem !important; /* Adjust card text size for smaller screens */
     }
 }
